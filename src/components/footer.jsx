@@ -1,6 +1,6 @@
 import React from 'react';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
-import disk from '../asset/934821-200.png';
+import disk from '../asset/img/934821-200.png';
 
 const Footer = () => {
 	return (

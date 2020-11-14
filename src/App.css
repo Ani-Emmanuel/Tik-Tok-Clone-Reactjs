@@ -38,39 +38,34 @@ html {
 .footer {
 	position: absolute;
 	color: white;
-	bottom: 5%;
+	bottom: 3%;
 	width: 100%;
-	padding: 15px;
-	bottom: 4px solid red;
-}
-
-.icons {
+	margin-top: 20px;
+	padding: 10px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.disc {
+#img {
+	height: 35px;
 	animation: discSpiner infinite 5s linear;
 	filter: invert(1);
-}
-
-#img {
-	height: 30px;
 }
 
 .sidebar {
 	position: absolute;
 	right: 0;
 	color: white;
-	top: 35%;
+	top: 25%;
 }
 
 .sideBarIcon {
 	padding: 15px;
 }
 
-.footerText {
-	margin: 10px;
+.footerText > p {
+	margin-top: 10px;
+	padding-bottom: 20px;
 }
 
 @keyframes discSpiner {

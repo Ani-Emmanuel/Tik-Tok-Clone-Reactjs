@@ -1,26 +1,16 @@
 import React from 'react';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
-// import AlbumIcon from '@material-ui/icons/Album';
+import disk from '../asset/934821-200.png';
 
 const Footer = () => {
 	return (
 		<div className='footer'>
 			<div className='footerText'>
-				<p>@Urenna</p>
+				<h3>@Urenna</h3>
 				<p>Hello for the footer</p>
+				<MusicNoteIcon />
 			</div>
-			<div className='icons'>
-				<div className='music'>
-					<MusicNoteIcon />
-				</div>
-				<div className='disc'>
-					<img
-					id="img"
-						src='https://static.thenounproject.com/png/934821-200.png'
-						alt=''
-					/>
-				</div>
-			</div>
+			<img id='img' src={disk} alt='' />
 		</div>
 	);
 };

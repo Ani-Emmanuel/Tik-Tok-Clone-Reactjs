@@ -2,7 +2,9 @@ import React, { useRef, useState } from 'react';
 import '../App.css';
 import Footer from './footer';
 import SideBar from './sideBar';
-const Video = () => {
+
+const Video = ({ description, sources, title, subtitle }) => {
+	console.log(description);
 	const videoRef = useRef(null);
 
 	const [playing, setPlaying] = useState(false);
@@ -19,17 +21,16 @@ const Video = () => {
 
 	return (
 		<div className='video'>
-			{/* <p style={{ color: 'black' }}>this is the video</p> */}
 			<video
 				loop
 				className='video_player'
 				onClick={onVideoPress}
 				ref={videoRef}
-				src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+				src={sources}
 				// src=""
 			></video>
 			<SideBar />
-			<Footer />
+			<Footer description={description} title={title} subtitle={subtitle} />
 		</div>
 	);
 };

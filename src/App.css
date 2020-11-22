@@ -15,7 +15,6 @@ html {
 	height: 500px;
 	border-radius: 10px;
 	width: 20%;
-	border: 1px solid red;
 	max-width: 500px;
 	overflow: scroll;
 	scroll-snap-type: y mandatory;
@@ -38,7 +37,7 @@ html {
 .footer {
 	position: absolute;
 	color: white;
-	bottom: 3%;
+	bottom: 1%;
 	width: 100%;
 	margin-top: 20px;
 	padding: 10px;
@@ -56,11 +55,21 @@ html {
 	position: absolute;
 	right: 0;
 	color: white;
-	top: 25%;
+	top: 30%;
 }
 
 .sideBarIcon {
 	padding: 15px;
+}
+
+.ticker{
+	position: absolute;
+	top: 70%;
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 30px;
+
+	font-size: small;
 }
 
 .footerText > p {

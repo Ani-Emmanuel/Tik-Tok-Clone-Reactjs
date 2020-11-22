@@ -4,7 +4,6 @@ import Footer from './footer';
 import SideBar from './sideBar';
 
 const Video = ({ description, sources, title, subtitle }) => {
-	console.log(description);
 	const videoRef = useRef(null);
 
 	const [playing, setPlaying] = useState(false);
